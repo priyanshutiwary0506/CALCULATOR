@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Calc - Premium Calculator</title>
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description"
+    content="A sleek, modern, and high-performance calculator built with premium aesthetics and smooth animations.">
+</head>
+
+<body>
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <div class="calculator-container">
+    <div class="calculator">
+      <div class="brand-tag">Stellar Series One</div>
+      <div class="display">
+        <div class="previous-operand" id="previous-operand"></div>
+        <div class="current-operand" id="current-operand">0</div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-secondary" onclick="clearCalculator()" id="btn-clear">AC</button>
+        <button class="btn btn-secondary" onclick="deleteDigit()" id="btn-delete">DEL</button>
+        <button class="btn btn-operator" onclick="appendOperator('%')" id="btn-modulo">%</button>
+        <button class="btn btn-operator" onclick="appendOperator('/')" id="btn-divide">÷</button>
+        <button class="btn" onclick="appendNumber('7')" id="btn-7">7</button>
+        <button class="btn" onclick="appendNumber('8')" id="btn-8">8</button>
+        <button class="btn" onclick="appendNumber('9')" id="btn-9">9</button>
+        <button class="btn btn-operator" onclick="appendOperator('*')" id="btn-multiply">×</button>
+        <button class="btn" onclick="appendNumber('4')" id="btn-4">4</button>
+        <button class="btn" onclick="appendNumber('5')" id="btn-5">5</button>
+        <button class="btn" onclick="appendNumber('6')" id="btn-6">6</button>
+        <button class="btn btn-operator" onclick="appendOperator('-')" id="btn-subtract">−</button>
+        <button class="btn" onclick="appendNumber('1')" id="btn-1">1</button>
+        <button class="btn" onclick="appendNumber('2')" id="btn-2">2</button>
+        <button class="btn" onclick="appendNumber('3')" id="btn-3">3</button>
+        <button class="btn btn-operator" onclick="appendOperator('+')" id="btn-add">+</button>
+        <button class="btn" onclick="appendNumber('0')" id="btn-0">0</button>
+        <button class="btn" onclick="appendNumber('.')" id="btn-dot">.</button>
+        <button class="btn btn-equals" onclick="compute()" id="btn-equal">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
